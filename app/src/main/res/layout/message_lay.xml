@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:id="@+id/fragment_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/mainlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/initials"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circular_text"
+                android:text="F"
+                android:textAllCaps="true"
+                android:textSize="18sp"
+                android:textColor="#fff"
+                android:layout_marginStart="20dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:padding="15dp"/>
+
+            <LinearLayout
+                android:id="@+id/lay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/initials"
+                android:orientation="vertical"
+                android:layout_toStartOf="@+id/time"
+                android:layout_marginStart="10dp"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:id="@+id/accountName"
+                    android:text="Google"
+                    android:textSize="16sp"
+                    android:textColor="#000"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userName"
+                    android:text="abc@gmail.com"
+                    android:textSize="12sp"
+                    android:singleLine="true"
+                    android:textColor="#757474"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timestamp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/time"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Mar 11, 2020"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="100dp"
+            android:background="@android:color/darker_gray"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
